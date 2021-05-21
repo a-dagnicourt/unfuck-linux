@@ -1,7 +1,7 @@
 # unfuck-linux
 How to reinstall Linux &amp; co in less than 2 days after you totally fucked it up.
 
----
+![alt text](https://github.com/a-dagnicourt/unfuck-linux/blob/main/assets/terminal.png "Much wow")
 
 # [ZSH + Oh My Zsh + Powerlevel10k + tacticool stuff](https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0)
 
