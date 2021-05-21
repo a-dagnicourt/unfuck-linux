@@ -89,10 +89,8 @@ ssh-add ~/.ssh/id_rsa
 # Nodejs + nvm + npm
 
 ```zsh
-sudo apt install nodejs
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
-nvm list-remote
-nvm install v16.0.0
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | zsh
+nvm install --lts
 ```
 
 # [LAMP Stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04)
