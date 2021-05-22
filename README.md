@@ -43,14 +43,18 @@ sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-
 ```zsh
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+```
+```zsh
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 exec $SHELL
 ```
 
 ```zsh
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+```
+```zsh
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
 exec $SHELL
 rbenv install 3.0.1
 rbenv global 3.0.1
@@ -66,11 +70,12 @@ gem install colorls
 vim ~/.zshrc
 ```
 
-_source $(dirname $(gem which colorls))/tab_complete.sh_
-_plugins=( git zsh-syntax-highlighting zsh-autosuggestions )_
-_if [ -x "$(command -v colorls)" ]; then_
-_alias ls="colorls"_
-_alias la="colorls -al"_
+_source $(dirname $(gem which colorls))/tab_complete.sh_\
+_plugins=( git zsh-syntax-highlighting zsh-autosuggestions )_\
+_if [ -x "$(command -v colorls)" ];_\
+_then_\
+_alias ls="colorls"_\
+_alias la="colorls -al"_\
 _fi_
 
 ```zsh
